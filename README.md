@@ -24,13 +24,13 @@ NGFW = UTM =
 |Connection rate        |68K-350K/sec           |640K-9M/sec          |
 
 
-|device/function    |Open Souce Sofrware              |
-|:------------------|--------------------------------:|
-|Firewall           |nftables, ebpf                   |
-|SSL offloder       |nginx, HAproxy, traefic          |
-|VPN                |open vpn, wireguard              |
-|UAG                |nginx, HAproxy, trafic           |
-|NGFW               |squid+suricata                   |
-|IDS                |snort, suricata, zeek            |
-|WAF                |nginx, HAproxy, traefik+suricata |
-|Web proxy          |68K-350K/sec                     |
+|data proceesing device|device/function    |Open Souce Software              |
+|:---------------------|:-----------------:|--------------------------------:|
+|ASIC, SoC, DPU        |Firewall           |nftables, ebpf                   |
+|GPU, CPU              |SSL offloder       |nginx, HAproxy, traefic          |
+|GPU, CPU              |VPN                |open vpn, wireguard              |
+|GPU, CPU              |UAG                |nginx, HAproxy, traefic          |
+|CPU                   |NGFW               |squid+suricata                   |
+|CPU                   |IDS                |snort, suricata, zeek            |
+|CPU                   |WAF                |nginx, HAproxy, traefik+suricata |
+|CPU                   |Web proxy          |68K-350K/sec                     |

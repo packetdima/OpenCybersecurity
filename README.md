@@ -10,7 +10,7 @@ Security can be thought of as data analysis. For example:
 <li>App Control works by analyzing content of each packet aganinst a database of known application signatures.
 <li>IDS works almost like app control only it analyzes each packet against a database of kbown vulnerabilities. This database is bigger than database of App control.
 
-Threfore if you view security as data analysis (computational tricks, which manipulate data) you can start building your own security system.
+'Threfore' if you view security as data analysis (computational tricks, which manipulate data) you can start building your own security system.
 Computational tricks, which manipulate data are implemented on hardware CPU, GPU, ASIC and FPGU and software which can work with these hardware.
 
 Next generation firewall (NGFW) has anti-virus/spyware, web-filtering, IDS/IPS, app-control, DLP, anti-spam functions and ofcourse routing, access-lists, VPN and etc. Let's look deeper, which hardware is required to build a security system.

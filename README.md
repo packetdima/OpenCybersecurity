@@ -24,6 +24,10 @@ NGFW = UTM =
 |Connection rate        |68K-350K/sec           |640K-9M/sec          |
 
 
+The following table shows which security functions can be implemented on which hardware.
+Deep Packet Inspection (DPI) is mostly implemented in CPU.
+Cryptographic functions (SSL decription/encryption) which are requied for VPN gateway or mobile/unified access gateway (UAG) can be boosted via GPU.
+
 |data proceesing device|device/function    |Open Souce Software              |
 |:---------------------|:-----------------:|--------------------------------:|
 |ASIC, SoC, DPU        |Firewall           |nftables, ebpf                   |
@@ -33,4 +37,4 @@ NGFW = UTM =
 |CPU                   |NGFW               |squid+suricata                   |
 |CPU                   |IDS                |snort, suricata, zeek            |
 |CPU                   |WAF                |nginx, HAproxy, traefik+suricata |
-|CPU                   |Web proxy          |68K-350K/sec                     |
+|CPU                   |Web proxy          |squid                            |

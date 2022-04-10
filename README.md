@@ -3,7 +3,7 @@ Security can be thought of as data analysis. For example:
 <li>An anti-virus sofrware analyzes data about memory and processes in the operating system and compares them with a database of known viruses (signatures).
 <li>The network firewall parses the packet headers and compares them to a database called access-list or network policy.
 <li>Transactional fraud monitoring systems analyze each transaction using a rule base, desicion tree or more sophisticated databasesd, which can be obtained using AI or mathematical statistics algorithms.
-<li>Secure software development lifecycle <mark>SDLC</mark> systems scan source code and compare it with the database of known software vulnerabilities.
+<li>Secure software development lifecycle **SDLC** systems scan source code and compare it with the database of known software vulnerabilities.
 <li>Data leakage prevention systems ^^DLP^^ scan content of emails, files and etc and compare it with the database (rule-based systems) or compare with more sophisticated database, which is created using AI and mathemetical statistics algorithms.
 <li>Web proxy systems also analyze packet content and search for known vulnerabilties and can block access from corporate network to Dropbox etc. Web prpxy can have 2nd function - analyze repuration of destination site, which is done by comparion of each session to repuration database.
 <li>Antispam has a database, which is built using mathematical statistics algothims. Antispam can have also domain-reputaion database. Threrefore antispam system scans each email and it's header against these databases.
@@ -32,7 +32,7 @@ Cryptographic functions (SSL decription/encryption) which are requied for VPN ga
 
 Most intellectual security functions, which analyze unstructural and unpredictural data (content) use CPU. Security functions which analyze structural data like packet headers can be boosted via ASIC, SoC, DPU, GPU etc.
 
-Firewall Hardware specification
+###### Firewall Hardware specification
 -----
 
 |                       |Firepower 4410-4150    |FortiGate 1800F-7121F|

@@ -1,5 +1,4 @@
-# fwhw
-Security as data analysis.
+# Security as data analysis
 Security can be thought of as data analysis. For example:
 <li>An anti-virus sofrware analyzes data about memory and processes in the operating system and compares them with a database of known viruses (signatures).
 <li>The network firewall parses the packet headers and compares them to a database called access-list or network policy.
@@ -31,7 +30,9 @@ Cryptographic functions (SSL decription/encryption) which are requied for VPN ga
 |CPU                   |WAF                |nginx, HAproxy, traefik+suricata |
 |CPU                   |Web proxy          |squid                            |
 
-===
+Most intellectual security functions, which analyze unstructural and unpredictural data (content) use CPU. Security functions which analyze structural data like packet headers can be boosted via ASIC, SoC, DPU, GPU etc.
+
+-----
 
 |                       |Firepower 4410-4150    |FortiGate 1800F-7121F|
 |:----------------------|:---------------------:|--------------------:|

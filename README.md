@@ -32,6 +32,7 @@ Cryptographic functions (SSL decription/encryption) which are requied for VPN ga
 
 Most intellectual security functions, which analyze unstructural and unpredictural data (content) use CPU. Security functions which analyze structural data like packet headers can be boosted via ASIC, SoC, DPU, GPU etc.
 
+Firewall Hardware specification
 -----
 
 |                       |Firepower 4410-4150    |FortiGate 1800F-7121F|

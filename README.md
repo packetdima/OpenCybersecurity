@@ -1,7 +1,7 @@
 # fwhw
 Security as data analysis.
 Security can be thought of as data analysis. For example:
-<li>An antivirus sofrware analyzes data about memory and processes in the operating system and compares them with a database of known viruses (signatures).
+<li>An anti-virus sofrware analyzes data about memory and processes in the operating system and compares them with a database of known viruses (signatures).
 <li>The network firewall parses the packet headers and compares them to a database called access-list or network policy.
 <li>Transactional fraud monitoring systems analyze each transaction using a rule base, desicion tree or more sophisticated databasesd, which can be obtained using AI or mathematical statistics algorithms.
 <li>Secure software development lifecycle (SDLC) systems scan source code and compare it with the database of known software vulnerabilities.
@@ -11,25 +11,10 @@ Security can be thought of as data analysis. For example:
 <li>App Control works by analyzing content of each packet aganinst a database of known application signatures.
 <li>IDS works almost like app control only it analyzes each packet against a database of kbown vulnerabilities. This database is bigger than database of App control.
 
-Threfore if you view security as data analysis (computationl tricks, which manipulates data) you can start building your own security system.
+Threfore if you view security as data analysis (computational tricks, which manipulate data) you can start building your own security system.
+Computational tricks, which manipulate data are implemented on hardware CPU, GPU, ASIC and FPGU and software which can work with these hardware.
 
-
-Anti-Virus/spyware, web filtering, IDS/IPS, app control, DLP, anti-spam
-
-NGFW = UTM = 
-
-
-|                       |Firepower 4410-4150    |FortiGate 1800F-7121F|
-|:----------------------|:---------------------:|--------------------:|
-|Firewall               |20-60Gbps              |                     |
-|IPSec VPN              |                       |                     |
-|Threat Protection      |                       |                     |
-|NGFW throuput          |                       |                     |
-|SSL inspection         |                       |                     |
-|Concurrent sessions    |                       |                     |
-|Session per second     |                       |                     |
-|Connection rate        |68K-350K/sec           |640K-9M/sec          |
-
+Next generation firewall (NGFW) has anti-virus/spyware, web-filtering, IDS/IPS, app-control, DLP, anti-spam functions and ofcourse routing, access-lists, VPN and etc. Let's look deeper, which hardware is required to build a security system.
 
 The following table shows which security functions can be implemented on which hardware.
 Deep Packet Inspection (DPI), which is required for Next Generation Firewalls (NGFW) or any device, which looks into packet content (not packet header) is mostly implemented in CPU.
@@ -45,3 +30,16 @@ Cryptographic functions (SSL decription/encryption) which are requied for VPN ga
 |CPU                   |IDS                |snort, suricata, zeek            |
 |CPU                   |WAF                |nginx, HAproxy, traefik+suricata |
 |CPU                   |Web proxy          |squid                            |
+
+===
+
+|                       |Firepower 4410-4150    |FortiGate 1800F-7121F|
+|:----------------------|:---------------------:|--------------------:|
+|Firewall               |20-60Gbps              |                     |
+|IPSec VPN              |                       |                     |
+|Threat Protection      |                       |                     |
+|NGFW throuput          |                       |                     |
+|SSL inspection         |                       |                     |
+|Concurrent sessions    |                       |                     |
+|Session per second     |                       |                     |
+|Connection rate        |68K-350K/sec           |640K-9M/sec          |

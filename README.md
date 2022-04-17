@@ -1,47 +1,36 @@
-# Security as data analysis
-Security can be thought of as data analysis. For example:
-<li>An anti-virus sofrware analyzes data about memory and processes in the operating system and compares them with a database of known viruses (signatures).
-<li>The network firewall parses the packet headers and compares them to a database called access-list or network policy.
-<li>Transactional fraud monitoring systems analyze each transaction using a rule base, desicion tree or more sophisticated databasesd, which can be obtained using AI or mathematical statistics algorithms.
-<li>Secure software development lifecycle **SDLC** systems scan source code and compare it with the database of known software vulnerabilities.
-<li>Data leakage prevention systems ^^DLP^^ scan content of emails, files and etc and compare it with the database (rule-based systems) or compare with more sophisticated database, which is created using AI and mathemetical statistics algorithms.
-<li>Web proxy systems also analyze packet content and search for known vulnerabilties and can block access from corporate network to Dropbox etc. Web prpxy can have 2nd function - analyze repuration of destination site, which is done by comparion of each session to repuration database.
-<li>Antispam has a database, which is built using mathematical statistics algothims. Antispam can have also domain-reputaion database. Threrefore antispam system scans each email and it's header against these databases.
-<li>App Control works by analyzing content of each packet aganinst a database of known application signatures.
-<li>IDS works almost like app control only it analyzes each packet against a database of kbown vulnerabilities. This database is bigger than database of App control.
+# Open source cybersecurity software
 
-'Threfore' if you view security as data analysis (computational tricks, which manipulate data) you can start building your own security system.
-Computational tricks, which manipulate data are implemented on hardware CPU, GPU, ASIC and FPGU and software which can work with these hardware.
+The following table lists open source software, which can be installed on Linux server to create an appliance and replace vendor's proprietary hardware.
+<br>Hardware server + open source software = applicance.
 
-Next generation firewall (NGFW) has anti-virus/spyware, web-filtering, IDS/IPS, app-control, DLP, anti-spam functions and ofcourse routing, access-lists, VPN and etc. Let's look deeper, which hardware is required to build a security system.
+|cybersecurity function                                          |open source software                                                  |
+|----------------------------------------------------------------|----------------------------------------------------------------------|
+|firewall                                                        |nftables, XDP, packet filter, npf, shorewall                          |
+|web proxy<br>SSL offloader<br>reverse proxy                     |squid, HAproxy, traefik, nginx, varnish, apache traffic server, pound |
+|unified access gateway<br>identity gateway<br>app gateway       |OpenIG, OWASP application gateway                                     |
+|WAF                                                             |modsecurity, ironbee, NAXSI, shadow daemon, lua-resty-way, vulture    |
+|NGFW                                                            |OPNSense, pfsense, ipfire                                             |
+|url filtering<br>content filtering                              |squid guard, dans guarding                                            |
+|DPI tools                                                       |nDPI                                                                  |
+|VPN                                                             |open vpn, wireguard                                                   |
+|IDS<br>IPS<br>threat detection                                  |snort, suricata, zeek                                                 | 
+|antispam<br>mail gateway                                        |spam assasin, mail scanner, ASSP, proxmox, orange assasin             |
+|sandbox                                                         |cuckoo                                                                |
+|antiDDoS                                                        |gatekeeper, fastnetmon, crowdsec                                      |
 
-The following table shows which security functions can be implemented on which hardware.
-Deep Packet Inspection (DPI), which is required for Next Generation Firewalls (NGFW) or any device, which looks into packet content (not packet header) is mostly implemented in CPU.
-Cryptographic functions (SSL decription/encryption) which are requied for VPN gateway or mobile/unified access gateway (UAG) can be boosted via GPU.
+Next-generation firewall characteristics:
 
-|data proceesing device|device/function    |Open Souce Software              |
-|:---------------------|:-----------------:|--------------------------------:|
-|ASIC, SoC, DPU        |Firewall           |nftables, ebpf                   |
-|GPU, CPU              |SSL offloder       |nginx, HAproxy, traefic          |
-|GPU, CPU              |VPN                |open vpn, wireguard              |
-|GPU, CPU              |UAG                |nginx, HAproxy, traefic          |
-|CPU                   |NGFW               |squid+suricata                   |
-|CPU                   |IDS                |snort, suricata, zeek            |
-|CPU                   |WAF                |nginx, HAproxy, traefik+suricata |
-|CPU                   |Web proxy          |squid                            |
+|charactestic                          |Cisco      | Palo Alto | Fortinet  | Juniper   | Hillstone |Checkpoint |
+|--------------------------------------|-----------|-----------|-----------|-----------|-----------|-----------|
+|firewall throuput                     |650Mb-235Gb|535Mb-697Gb|800Mb-1,9Tb|1Gb-1Tb    |1Gb-1,2Tb  |3,3Gb-800Gb|
+|NGFW throuput<br>App ID throuput      |650Mb-190Gb|500Mb-697Gb|800Mb-550Gb|100Mb-400Gb|400Mb-280Gb|1,5Gb-51Gb | 
+|IPS throuput<br>theat protection      |650Mb-190Gb|150Mb-405Gb|600Mb-675Gb|200Mb-860Gb|610Mb-400Gb|2Gb-52Gb   |
+|IPSec VPN throuput                    |150Mb-110Gb|100Mb-334Gb|950Mb-63Gb |300Mb-230Gb|620Mb-500Gb|3,3Gb-44Gb |
+|VPN peers<br>VPN tunnels              |75-60k     |500-60k    |200k-26k   |250-40k    |512-20k    |200-20k    |
+|concurrent session                    |3m-195m    |64k-416m   |700k-1000m |64k-338m   |300k-480m  |2m-49m     |
+|sessions per second<br>Connetion rate |40k-1,1m   |4k-6m      |35k-9m     |5k-7,5m    |15k-10m    |32k-690k   |
 
-Most intellectual security functions, which analyze unstructural and unpredictural data (content) use CPU. Security functions which analyze structural data like packet headers can be boosted via ASIC, SoC, DPU, GPU etc.
-
-###### Firewall Hardware specification
------
-
-|                       |Firepower 4410-4150    |FortiGate 1800F-7121F|
-|:----------------------|:---------------------:|--------------------:|
-|Firewall               |20-60Gbps              |                     |
-|IPSec VPN              |                       |                     |
-|Threat Protection      |                       |                     |
-|NGFW throuput          |                       |                     |
-|SSL inspection         |                       |                     |
-|Concurrent sessions    |                       |                     |
-|Session per second     |                       |                     |
-|Connection rate        |68K-350K/sec           |640K-9M/sec          |
+Findings:
+<li> All hardware firewall vendors have almost the same hardware.
+<li> Firewall pps-capabilities do differ -  firewall with low pps could be taken out by pps-DDoS.
+<li> Intelligent packet processing like App ID, NGFW, IPS, threat protection is a non-technical speculative term and it's performance depends on how many rules vendor integrated into IPS, threat protection etc. 

@@ -18,8 +18,7 @@ The following table lists open source software, which can be installed on Linux 
 |sandbox                                                         |cuckoo                                                                |
 |antiDDoS                                                        |gatekeeper, fastnetmon, crowdsec                                      |
 
-Next-generation firewall characteristics:
-
+# Next-generation firewall characteristics:
 |charactestic                          |Cisco      | Palo Alto | Fortinet  | Juniper   | Hillstone |Checkpoint |
 |--------------------------------------|-----------|-----------|-----------|-----------|-----------|-----------|
 |firewall throuput                     |650Mb-235Gb|535Mb-697Gb|800Mb-1,9Tb|1Gb-1Tb    |1Gb-1,2Tb  |3,3Gb-800Gb|
@@ -36,7 +35,7 @@ Findings:
 <li> Intelligent packet processing like App ID, NGFW, IPS, threat protection is a non-technical speculative term and it's performance depends on how many rules vendor integrated into IPS, threat protection etc. 
 
   
-Open Source firewall (router+fw) operating system comparison:
+# Open Source firewall (router+fw) operating system comparison
 |firewall<br>distro |linux<br>distro        |packet manager|latest release|techological<br>stack                        |arch       |comments            |
 |-------------------|-----------------------|--------------|--------------|---------------------------------------------|-----------|--------------------|
 |opnsense<br>pfsense|xBSD                   |yes           |2022          |JavaScript<br>PHPM<br>Shell                  |x86        |One of the most common products, a fairly simple and logical core. Firewall, QOS are implemented differently from linux. There are performance and hardware issues (NICs)|
@@ -46,6 +45,6 @@ Open Source firewall (router+fw) operating system comparison:
 |zentyal            |ubuntu                 |dpkg          |2021          |JavaScript<br>Perl<br>Shell                  |x86        |More server management tool than a firewall|
 |webadmin           |any, works on Debian 10|any           |2022          |Perl                                         |many       |More server management tool than a firewall. Firewall interface is limited.|
 |cockpit            |any, works on Debian 10|any           |2022          |JavaScript<br>C<br>Python                    |many       |A more modern analogue of Webmin|
-|xWRT               |linux                  |ippg          |2022          |JavaScript<br>C<br>Lua                       |ARM<br>MIPS|Solution for creating a firewall on low end hardware|
+|xWRT               |linux                  |ipkg          |2022          |JavaScript<br>C<br>Lua                       |ARM<br>MIPS|Solution for creating a firewall on low end hardware|
 
   

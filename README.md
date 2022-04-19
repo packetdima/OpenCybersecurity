@@ -37,7 +37,7 @@ Findings:
 
   
 Open Source firewall (router+fw) operating system comparison:
-|firewall           |distro                 |packet manager|latest release|techstack                                    |arch    |comments            |
+|firewall distro    |linux distro           |packet manager|latest release|techstack                                    |arch    |comments            |
 |-------------------|-----------------------|--------------|--------------|---------------------------------------------|--------|--------------------|
 |opnsense<br>pfsense|xBSD                   |yes           |2022          |JavaScript<br>PHPM<br>Shell                  |x86     |One of the most common products, a fairly simple and logical core. Firewall, QOS are implemented differently from linux. There are performance and hardware issues (NICs)|
 |VyoS               |Debian 10              |monolthic+deb |2021          |Python/Django<br>Perl                        |x86, ARM|More router than a firewall. Has server control tools. Has CLI.| 
@@ -46,6 +46,6 @@ Open Source firewall (router+fw) operating system comparison:
 |zentyal            |ubuntu                 |dpkg          |2021          |JavaScript<br>Perl<br>Shell                  |x86     |More server management tool than a firewall|
 |webadmin           |any, works on Debian 10|any           |2022          |Perl                                         |many    |More server management tool than a firewall. Firewall interface is limited.|
 |cockpit            |any, works on Debian 10|any           |2022          |JavaScript<br>C<br>Python                    |many    |A more modern analogue of Webmin|
-|xWRT               |linux                  |ippg          |2022          |JavaScript<br>C<br>Lua                       |ARM,MIPS|Solution for creating a firewall on hardware with limited resources|
+|xWRT               |linux                  |ippg          |2022          |JavaScript<br>C<br>Lua                       |ARM,MIPS|Solution for creating a firewall on low end hardware|
 
   

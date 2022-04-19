@@ -1,11 +1,11 @@
 # Open source cybersecurity software
 
 The following table lists open source software, which can be installed on Linux server to create an appliance and replace vendor's proprietary hardware.
-<br>Hardware server + open source software = appliance.
+<br>Hardware server + linux + open source software = appliance.
 
 |cybersecurity function                                          |open source software                                                  |
 |----------------------------------------------------------------|----------------------------------------------------------------------|
-|firewall                                                        |nftables, XDP, packet filter, npf, shorewall                          |
+|firewall                                                        |system tools: nftables, XDP, packet filter, npf, shorewall<br> firewall distros: opnsense, pfsense, VyOS, ClearOS, ipfire, zentyal, webadmin, cockpit, xWRT|
 |web proxy<br>SSL offloader<br>reverse proxy                     |squid, HAproxy, traefik, nginx, varnish, apache traffic server, pound |
 |unified access gateway<br>identity gateway<br>app gateway       |OpenIG, OWASP application gateway                                     |
 |WAF                                                             |modsecurity, ironbee, NAXSI, shadow daemon, lua-resty-way, vulture    |
@@ -13,7 +13,7 @@ The following table lists open source software, which can be installed on Linux 
 |url filtering<br>content filtering                              |squid guard, dans guarding                                            |
 |DPI tools                                                       |nDPI                                                                  |
 |VPN                                                             |open vpn, wireguard                                                   |
-|IDS<br>IPS<br>threat detection                                  |snort, suricata, zeek                                                 | 
+|IDS<br>IPS<br>threat detection<br>AppID                         |snort, suricata, zeek                                                 | 
 |antispam<br>mail gateway                                        |spam assasin, mail scanner, ASSP, proxmox, orange assasin             |
 |sandbox                                                         |cuckoo                                                                |
 |antiDDoS                                                        |gatekeeper, fastnetmon, crowdsec                                      |
@@ -37,15 +37,15 @@ Findings:
 
   
 Open Source firewall (router+fw) operating system comparison:
-|firewall distro    |linux distro           |packet manager|latest release|techstack                                    |arch    |comments            |
-|-------------------|-----------------------|--------------|--------------|---------------------------------------------|--------|--------------------|
-|opnsense<br>pfsense|xBSD                   |yes           |2022          |JavaScript<br>PHPM<br>Shell                  |x86     |One of the most common products, a fairly simple and logical core. Firewall, QOS are implemented differently from linux. There are performance and hardware issues (NICs)|
-|VyoS               |Debian 10              |monolthic+deb |2021          |Python/Django<br>Perl                        |x86, ARM|More router than a firewall. Has server control tools. Has CLI.| 
-|ClearOS            |RHEL/CentOS            |rpm           |2020          |JavaScript<br>PHP<br>Shell<br>C++<br>Python  |x86     |More of a server management tool than a firewall. Although they are affiliated with HP. Possible to use with Cockpit.|
-|ipfire             |linux                  |no            |2022          |Per(Raku)<br>C<br>Shell                      |x86, ARM|Specialized distribution  for creating a firewall|
-|zentyal            |ubuntu                 |dpkg          |2021          |JavaScript<br>Perl<br>Shell                  |x86     |More server management tool than a firewall|
-|webadmin           |any, works on Debian 10|any           |2022          |Perl                                         |many    |More server management tool than a firewall. Firewall interface is limited.|
-|cockpit            |any, works on Debian 10|any           |2022          |JavaScript<br>C<br>Python                    |many    |A more modern analogue of Webmin|
-|xWRT               |linux                  |ippg          |2022          |JavaScript<br>C<br>Lua                       |ARM,MIPS|Solution for creating a firewall on low end hardware|
+|firewall<br>distro |linux<br>distro        |packet manager|latest release|techological<br>stack                        |arch       |comments            |
+|-------------------|-----------------------|--------------|--------------|---------------------------------------------|-----------|--------------------|
+|opnsense<br>pfsense|xBSD                   |yes           |2022          |JavaScript<br>PHPM<br>Shell                  |x86        |One of the most common products, a fairly simple and logical core. Firewall, QOS are implemented differently from linux. There are performance and hardware issues (NICs)|
+|VyoS               |Debian 10              |monolthic+deb |2021          |Python/Django<br>Perl                        |x86<br>ARM |More router than a firewall. Has server control tools. Has CLI.| 
+|ClearOS            |RHEL/CentOS            |rpm           |2020          |JavaScript<br>PHP<br>Shell<br>C++<br>Python  |x86        |More of a server management tool than a firewall. Although they are affiliated with HP. Possible to use with Cockpit.|
+|ipfire             |linux                  |no            |2022          |Per(Raku)<br>C<br>Shell                      |x86<br>ARM |Specialized distribution  for creating a firewall|
+|zentyal            |ubuntu                 |dpkg          |2021          |JavaScript<br>Perl<br>Shell                  |x86        |More server management tool than a firewall|
+|webadmin           |any, works on Debian 10|any           |2022          |Perl                                         |many       |More server management tool than a firewall. Firewall interface is limited.|
+|cockpit            |any, works on Debian 10|any           |2022          |JavaScript<br>C<br>Python                    |many       |A more modern analogue of Webmin|
+|xWRT               |linux                  |ippg          |2022          |JavaScript<br>C<br>Lua                       |ARM<br>MIPS|Solution for creating a firewall on low end hardware|
 
   

@@ -1,5 +1,4 @@
 <meta name="google-site-verification" content="bfDZBjgtGQJUrgVdgO7HpQ25u9QN0E9us2PaGKxsal0" />
-
 # Open source cybersecurity software
 
 The following table lists open source software, which can be installed on Linux server to create an appliance and replace vendor's proprietary hardware.

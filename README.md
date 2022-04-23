@@ -1,4 +1,3 @@
-<meta name="google-site-verification" content="bfDZBjgtGQJUrgVdgO7HpQ25u9QN0E9us2PaGKxsal0" />
 # Open source cybersecurity software
 
 The following table lists open source software, which can be installed on Linux server to create an appliance and replace vendor's proprietary hardware.
@@ -36,7 +35,7 @@ Findings:
 <li> Intelligent packet processing like App ID, NGFW, IPS, threat protection is a non-technical speculative term and it's performance depends on how many rules vendor integrated into IPS, threat protection etc. 
 
   
-# Open Source firewall (router+fw) operating system comparison
+# Open Source firewall (and router+fw) operating system comparison
 |firewall<br>distro |linux<br>distro        |packet manager|latest release|techological<br>stack                        |arch       |comments            |
 |-------------------|-----------------------|--------------|--------------|---------------------------------------------|-----------|--------------------|
 |opnsense<br>pfsense|xBSD                   |yes           |2022          |JavaScript<br>PHPM<br>Shell                  |x86        |One of the most common products, a fairly simple and logical core. Firewall, QOS are implemented differently from linux. There are performance and hardware issues (NICs)|
@@ -48,4 +47,19 @@ Findings:
 |cockpit            |any, works on Debian 10|any           |2022          |JavaScript<br>C<br>Python                    |many       |A more modern analogue of Webmin|
 |xWRT               |linux                  |ipkg          |2022          |JavaScript<br>C<br>Lua                       |ARM<br>MIPS|Solution for creating a firewall on low end hardware|
 
+Findings: 
+<li> Maybe I searched badly, but I did not find an open-source management system for a large number of firewalls such as Cisco Security Manager, Juniper NSM, PaloAlto Panorama, Fortinet FortiManager. The management system allows you to change the policy on all firewalls with one mouse-click, build a network topology using graphs, present the security status in the form of dashboards etc.
+<li> Currently, there are many web frameworks, backend libraries, so the creation of a stable open-source analogue of Cisco Security Manager is a matter of time.
   
+
+# Open source network operating systems (NOS):
+Networking equipment from Cisco Systems, Arista Networks, and Juniper Networks and others runs on operating system software owned and built by those vendors. Some parties think that needs to change. However, a stable open-source network management system has not been developed (in my opinion). Below is a collection of existing open-source network operating systems.
+|network<br>operating system			|vendor			  |Release		  |arch				    |technological stack		|
+|---------------------------------|-------------|-------------|---------------|-----------------------|
+|SONiC										        |Microsoft		|no releases	|x86				    |Java Script, Shell			|
+|Stratum									        |Intel				|2022			    |?					    |C++, Shell				      |
+|FBOSS									          |Facebook			|no releases	|					      |C++, Python, Shell		  |
+|VyOS										          |Vyos				  |2022			    |x86, ARM		    |							          |
+|Open Network Linux						    |?          	|no releases	|x86, ARM		    |C, Python					    |
+|Open Switch								      |?          	|2019			    |x86				    |C, C++, Python, Shell	|
+|Dent										          |?          	|2022			    |x86,ARM,powerPC|							          |

@@ -13,7 +13,7 @@ The following table lists open source software, which can be installed on Linux 
 |`url filtering` `content filtering`                             |`squid guard` `dans guarding`                                                |
 |`DPI tools`                                                     |`nDPI`                                                                       |
 |`VPN`                                                           |`open vpn` `wireguard`                                                       |
-|`IDS` `IPS` `threat detection` `AppID`                          |`snort` `suricata` `zeek`                                                    | 
+|`IDS` `IPS` `threat detection` `AppID`                          |`snort` `suricata` `zeek` `sensei`                                           | 
 |`antispam` `mail gateway`                                       |`spam assasin` `mail scanner` `ASSP` `proxmox` `orange assasin`              |
 |`sandbox`                                                       |`cuckoo`                                                                     |
 |`antiDDoS`                                                      |`gatekeeper` `fastnetmon` `crowdsec`                                         |

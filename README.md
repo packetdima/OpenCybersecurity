@@ -11,9 +11,9 @@ The following table lists open source software, which can be installed on Linux 
 |`WAF`                                                           |`modsecurity` `ironbee` `NAXSI` `shadow daemon` `lua-resty-way` `vulture`    |
 |`NGFW`                                                          |`OPNSense` `pfsense` `ipfire`                                                |
 |`url filtering` `content filtering`                             |`squid guard` `dans guarding`                                                |
-|`DPI tools`  `AppID`                                            |`nDPI` `nTop`                                                                |
+|`DPI tools`  `AppID` `Application visibility`                   |`nDPI` `nTop`                                                                |
 |`VPN`                                                           |`open vpn` `wireguard`                                                       |
-|`IDS` `IPS` `threat detection`                                  |`snort` `suricata` `zeek` `sensei`                                           | 
+|`IDS` `IPS` `threat detection` `threat defence`                 |`snort` `suricata` `zeek` `sensei`                                           | 
 |`antispam` `mail gateway`                                       |`spam assasin` `mail scanner` `ASSP` `proxmox` `orange assasin`              |
 |`sandbox`                                                       |`cuckoo`                                                                     |
 |`antiDDoS`                                                      |`gatekeeper` `fastnetmon` `crowdsec`                                         |

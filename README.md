@@ -17,7 +17,7 @@ The following table lists open source software, which can be installed on Linux 
 |`antispam` `mail gateway`                                       |`spam assasin` `mail scanner` `ASSP` `proxmox` `orange assasin`              |
 |`sandbox`                                                       |`cuckoo`                                                                     |
 |`antiDDoS`                                                      |`gatekeeper` `fastnetmon` `crowdsec`                                         |
-|`antiVirus`                                                     |`clamAV`                                                                     |
+|`antivirus`                                                     |`clamAV`                                                                     |
 
 # Next-generation firewall characteristics:
 |charactestic                          |Cisco      | Palo Alto | Fortinet  | Juniper   | Hillstone |Checkpoint |

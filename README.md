@@ -19,21 +19,6 @@ The following table lists open source software, which can be installed on Linux 
 |`antiDDoS`                                                      |`gatekeeper` `fastnetmon` `crowdsec`                                         |
 |`antivirus`                                                     |`clamAV`                                                                     |
 
-# Next-generation firewall characteristics:
-|charactestic                          |Cisco      | Palo Alto | Fortinet  | Juniper   | Hillstone |Checkpoint |
-|--------------------------------------|-----------|-----------|-----------|-----------|-----------|-----------|
-|`firewall throuput`                   |650Mb-235Gb|535Mb-697Gb|800Mb-1,9Tb|1Gb-1Tb    |1Gb-1,2Tb  |3,3Gb-800Gb|
-|`NGFW throuput` `AppID throuput`      |650Mb-190Gb|500Mb-697Gb|800Mb-550Gb|100Mb-400Gb|400Mb-280Gb|1,5Gb-51Gb | 
-|`IPS throuput` `theat protection`     |650Mb-190Gb|150Mb-405Gb|600Mb-675Gb|200Mb-860Gb|610Mb-400Gb|2Gb-52Gb   |
-|`IPSec VPN throuput`                  |150Mb-110Gb|100Mb-334Gb|950Mb-63Gb |300Mb-230Gb|620Mb-500Gb|3,3Gb-44Gb |
-|`VPN peers` `VPN tunnels`             |75-60k     |500-60k    |200k-26k   |250-40k    |512-20k    |200-20k    |
-|`concurrent session`                  |3m-195m    |64k-416m   |700k-1000m |64k-338m   |300k-480m  |2m-49m     |
-|`sessions per second` `connetion rate`|40k-1,1m   |4k-6m      |35k-9m     |5k-7,5m    |15k-10m    |32k-690k   |
-
-Findings:
-1. Vendors have almost the `same hardware.` 
-2. Deep packet processing like `App ID`, `NGFW`, `IPS`,`ngIPS` `threat protection` is a non-technical speculative term and it's performance depends on how many rules vendor integrated into IPS, threat protection etc. 
-  
 # Open Source firewall (and router+fw) operating system comparison
 |firewall<br>distro |linux<br>distro        |packet manager|latest release|techological<br>stack                       |arch       |comments            |
 |-------------------|-----------------------|--------------|--------------|--------------------------------------------|-----------|--------------------|

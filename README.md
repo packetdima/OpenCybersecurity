@@ -15,7 +15,7 @@ The following table lists open source software, which can be installed on Linux 
 |`VPN`                                                           |`open vpn` `wireguard`                                                       |
 |`IDS` `IPS` `threat detection` `threat defence`                 |`snort` `suricata` `zeek` `sensei`                                           | 
 |`antispam` `mail gateway`                                       |`spam assasin` `mail scanner` `ASSP` `proxmox` `orange assasin`              |
-|`sandbox`                                                       |`cuckoo`                                                                     |
+|`sandbox`                                                       |`cuckoo` `firejail`                                                                     |
 |`antiDDoS`                                                      |`gatekeeper` `fastnetmon` `crowdsec`                                         |
 |`antivirus`                                                     |`clamAV`                                                                     |
 

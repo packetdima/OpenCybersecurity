@@ -6,11 +6,11 @@ The following table lists open source software, which can be installed on Linux 
 |cybersecurity function                                          |open source software                                                  |
 |----------------------------------------------------------------|----------------------------------------------------------------------|
 |`firewall`                                                      |system tools: `nftables` `XDP` `packet filter` `npf` `shorewall` <br> firewall distros: `opnsense` `pfsense` `VyOS` `ClearOS` `ipfire` `zentyal` `webadmin` `cockpit` `xWRT`|
-|`web proxy` `SSL offloader` `reverse proxy`                     |`squid` `HAproxy` `traefik` `nginx` `varnish` `apache traffic server` `pound`|
-|`unified access gateway` `identity gateway` `app gateway`       |`OpenIG` `OWASP` `application gateway`                                       |
 |`WAF`                                                           |`modsecurity` `ironbee` `NAXSI` `shadow daemon` `vulture`                    |
 |`NGFW`                                                          |`OPNSense` `pfsense` `ipfire`                                                |
-|`url filtering` `content filtering`                             |`squid guard` `dans guarding`                                                |
+|`web proxy` `url filtering` `content filtering`                 |`squid` `squid guard` `dans guarding`                                        |
+|`SSL offloader` `reverse proxy`                                 |`HAproxy` `traefik` `nginx` `varnish` `apache traffic server` `pound`.       |
+|`unified access gateway` `identity gateway` `app gateway`       |`OpenIG` `OWASP application gateway`                                         |
 |`DPI tools`  `AppID` `application visibility`                   |`nDPI` `nTop`                                                                |
 |`VPN`                                                           |`open vpn` `wireguard`                                                       |
 |`IDS` `IPS` `threat detection` `threat defence` `malicious activity detection` `online traffic scanning`|`snort` `suricata` `zeek` `sensei`   | 

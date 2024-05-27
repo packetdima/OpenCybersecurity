@@ -22,13 +22,13 @@ The following table lists open source software, which can be installed on Linux 
 # Open Source firewall (and router+fw) operating system comparison
 |firewall<br>distro |linux<br>distro        |packet manager|latest release|techological<br>stack                       |arch       |comments            |
 |-------------------|-----------------------|--------------|--------------|--------------------------------------------|-----------|--------------------|
-|opnsense<br>pfsense|xBSD                   |yes           |2023          |`JavaScript` `PHP` `Shell`                  |`x86`        |One of the most common products, a fairly simple and logical core. Firewall, QOS are implemented differently from linux. There are performance and hardware issues (NICs)|
-|VyoS               |Debian 10              |monolthic+deb |2023          |`Python/Django` `Perl`                    |`x86` `ARM` |More router than a firewall. Has server control tools. Has CLI.| 
+|opnsense<br>pfsense|xBSD                   |yes           |2024          |`JavaScript` `PHP` `Shell`                  |`x86`        |One of the most common products, a fairly simple and logical core. Firewall, QOS are implemented differently from linux. There are performance and hardware issues (NICs)|
+|VyoS               |Debian 10              |monolthic+deb |2024          |`Python/Django` `Perl`                    |`x86` `ARM` |More router than a firewall. Has server control tools. Has CLI.| 
 |ClearOS            |RHEL/CentOS            |rpm           |2020          |`JavaScript` `PHP` `Shell` `C++` `Python` |`x86`        |More of a server management tool than a firewall. Although they are affiliated with HP. Possible to use with Cockpit.|
-|ipfire             |linux                  |no            |2023          |`Perl(Raku)` `C` `Shell`                   |`x86` `ARM`|Specialized distribution  for creating a firewall|
+|ipfire             |linux                  |no            |2024          |`Perl(Raku)` `C` `Shell`                   |`x86` `ARM`|Specialized distribution  for creating a firewall|
 |zentyal            |ubuntu                 |dpkg          |2021          |`JavaScript` `Perl` `Shell`                  |`x86`        |More server management tool than a firewall|
-|webadmin           |any, works on Debian 10|any           |2023          |`Perl`                                         |`many`       |More server management tool than a firewall. Firewall interface is limited.|
-|cockpit            |any, works on Debian 10|any           |2023          |`JavaScript` `C` `Python`                    |`many`       |A more modern analogue of Webmin|
-|xWRT               |linux                  |ipkg          |2023          |`JavaScript` `C` `Lua`                       |`ARM` `MIPS`|Solution for creating a firewall on low end hardware|
+|webadmin           |any, works on Debian 10|any           |2024          |`Perl`                                         |`many`       |More server management tool than a firewall. Firewall interface is limited.|
+|cockpit            |any, works on Debian 10|any           |2024          |`JavaScript` `C` `Python`                    |`many`       |A more modern analogue of Webmin|
+|xWRT               |linux                  |ipkg          |2024          |`JavaScript` `C` `Lua`                       |`ARM` `MIPS`|Solution for creating a firewall on low end hardware|
 
 Findings: No open-source analogue for `Cisco Security Manager.`

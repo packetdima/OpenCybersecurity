@@ -6,7 +6,7 @@ The following table lists open source software, which can be installed on Linux 
 |cybersecurity function                                          |open source software                                                  |
 |----------------------------------------------------------------|----------------------------------------------------------------------|
 |`firewall`                                                      |`opnsense` `pfsense` `VyOS` `ClearOS` `ipfire` `zentyal` `webadmin` `cockpit` `xWRT` |
-|`WAF`                                                           |`modsecurity` `ironbee` `NAXSI` `shadow daemon` `vulture`                            |
+|`WAF`                                                           |`modsecurity` `ironbee` `NAXSI` `shadow daemon` `vulture` `bunkerweb`                |
 |`NGFW`                                                          |`OPNSense` `pfsense` `ipfire` `nethsecurity`                                         |
 |`web proxy` `url filtering` `content filtering`                 |`squid` `squid guard` `dans guarding`                                                |
 |`SSL offloader` `reverse proxy`                                 |`HAproxy` `traefik` `nginx` `varnish` `apache traffic server` `pound`.               |
